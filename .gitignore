@@ -143,3 +143,8 @@ mlruns/
 data.zip
 running_logs.log
 PetImages/
+*.docx
+
+data/readme*
+data/bad_data
+
