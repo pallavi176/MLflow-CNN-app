@@ -2,7 +2,7 @@ import mlflow
 import argparse
 import os
 import logging
-from src.utils.common import create_directories
+from src.utils.common import read_yaml, create_directories
 
 
 STAGE = "MAIN" ## <<< change stage name 
@@ -24,6 +24,7 @@ def main():
         mlflow.run(".", "get_data", use_conda=False)
         # mlflow.run(".", "get_data", parameters={}, use_conda=False)
         mlflow.run(".", "base_model_creation", use_conda=False)
+        mlflow.run(".", "training", use_conda=False)
 
 if __name__ == '__main__':
     try:
