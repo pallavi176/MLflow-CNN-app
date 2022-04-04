@@ -147,4 +147,5 @@ PetImages/
 
 data/readme*
 data/bad_data
+*.h5
 
